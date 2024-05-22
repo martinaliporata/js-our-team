@@ -37,12 +37,9 @@ console.log(workers)
 
 const container = document.getElementById('list');
 
-// Funzione per visualizzare le informazioni delle persone sul DOM
 function workers(peopleArray) {
-    // Svuota il contenitore prima di aggiungere nuovi elementi
     container.innerHTML = '';
     
-    // Itera attraverso l'array di persone
     for (let key in workers){
 
         const peopleIn = document.createElement('div');
@@ -53,5 +50,11 @@ function workers(peopleArray) {
     };
 }
 
-// Chiama la funzione per visualizzare le persone
 workers(persone);
+
+for (let index = 0; index < 6; index++) {
+    const AddImage = document.getElementById("photos");
+    const img = document.createElement("img");
+    img.src = "";
+    photos.appendChild(img);
+    }

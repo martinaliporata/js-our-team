@@ -12,3 +12,8 @@ Stampare le stesse informazioni su DOM sottoforma di stringhe
 Creiamo un array di objects (chiave:valore)
 Stampare le informazioni in console.log
 Stampare le informazioni nel DOM con ciclo for in, createElement, append.child
+
+Bonus 1
+Trasformare la stringa foto in una immagine effettiva
+
+Crea un ciclo for per far apparire le stringe delle immagini in immagini effettive creando le immagini in js con createElement e appendChild
