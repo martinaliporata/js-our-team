@@ -7,3 +7,8 @@ MILESTONE 1:
 Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+
+Creiamo un array di objects (chiave:valore)
+Stampare le informazioni in console.log
+Stampare le informazioni nel DOM con append.child
