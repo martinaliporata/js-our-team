@@ -33,4 +33,25 @@ const workers =
 
     ]
 
-    console.log(workers)
+console.log(workers)
+
+const container = document.getElementById('list');
+
+// Funzione per visualizzare le informazioni delle persone sul DOM
+function workers(peopleArray) {
+    // Svuota il contenitore prima di aggiungere nuovi elementi
+    container.innerHTML = '';
+    
+    // Itera attraverso l'array di persone
+    for (let key in workers){
+
+        const peopleIn = document.createElement('div');
+        
+        peopleIn.textContent = `Name: ${workers.name}, Job-title: ${workers.job-title}, Img: ${workers.img}`;
+        
+        container.appendChild(peopleIn);
+    };
+}
+
+// Chiama la funzione per visualizzare le persone
+workers(persone);
