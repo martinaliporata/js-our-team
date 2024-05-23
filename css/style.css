@@ -1,26 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+}
+
 section#output {
     display: flex;
     justify-content: space-around;
     align-content: start;
     flex-wrap: wrap;
-    width: 1000px;
-    height: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 section#output article {
-    border: 2px solid white;
-}
-
-section#output > article {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    width: calc((100% / 8));
-    height: calc((100% / 8));
-    font-weight: bold;
+    width: calc((100% / 3));
+    margin-right: 2rem;
+    background-color: white;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 section article > img {

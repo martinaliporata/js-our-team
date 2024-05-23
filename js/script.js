@@ -1,5 +1,5 @@
 const containerEl = document.querySelector('section#output')
-const workers = 
+const members = 
     [
         {
             name : 'Wayne Barnett',
@@ -33,20 +33,19 @@ const workers =
         }
     ]
 
-for (let index= 0; index <workers.length; index++){
-    const worker = workers[index]
-    console.log(worker.name, worker.role, worker.image);
-    // containerEl.append(worker.name, worker.role, '---');
+for (let index= 0; index <members.length; index++){
+    const member = members[index]
+    console.log(member.name, member.role, member.image);
     const cardEl = document.createElement('article')
 
     const titleEl = document.createElement('h2')
-    titleEl.append(worker.name)
+    titleEl.append(member.name)
     
     const roleEl = document.createElement('p')
     roleEl.append(member.role)
 
     const imageEl = document.createElement('img')
-    imageEl.src= `./img${member.image}`
+    imageEl.src= `./imgs/${member.image}`
 
     cardEl.appendChild(imageEl)
     cardEl.appendChild(titleEl)
