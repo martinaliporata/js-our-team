@@ -1,60 +1,56 @@
+const containerEl = document.querySelector('section#output')
 const workers = 
     [
         {
             name : 'Wayne Barnett',
-            'job-title' : 'Founder & CEO',
-            img : 'wayne-barnett-founder-ceo.jpg'
+            role : 'Founder & CEO',
+            image : 'wayne-barnett-founder-ceo.jpg'
         },
         {
             name : 'Angela Caroll',
             'job-title' : 'Chief Editor',
-            img : 'angela-caroll-chief-editor.jpg'
+            image : 'angela-caroll-chief-editor.jpg'
         },
         {
             name : 'Walter Gordon',
-            'job-title' : 'Office Manager',
-            img : 'walter-gordon-office-manager.jpg'
+            role : 'Office Manager',
+            image : 'walter-gordon-office-manager.jpg'
         },
         {
             name : 'Angela Lopez',
-            'job-title' : 'Social Media Manager',
-            img : 'angela-lopez-social-media-manager.jpg'
+            role: 'Social Media Manager',
+            image : 'angela-lopez-social-media-manager.jpg'
         },
         {
             name : 'Scott Estrada',
-            'job-title' : 'Developer',
-            img : 'scott-estrada-developer.jpg'
+            role : 'Developer',
+            image : 'scott-estrada-developer.jpg'
         },
         {
             name : 'Barbara Ramos',
-            'job-title' : 'Graphic Designer',
-            img : 'barbara-ramos-graphic-designer.jpg'
+            role : 'Graphic Designer',
+            image : 'barbara-ramos-graphic-designer.jpg'
         }
-
     ]
 
-console.log(workers)
+for (let index= 0; index <workers.length; index++){
+    const worker = workers[index]
+    console.log(worker.name, worker.role, worker.image);
+    // containerEl.append(worker.name, worker.role, '---');
+    const cardEl = document.createElement('article')
 
-const container = document.getElementById('list');
-
-function workers(peopleArray) {
-    container.innerHTML = '';
+    const titleEl = document.createElement('h2')
+    titleEl.append(worker.name)
     
-    for (let key in workers){
+    const roleEl = document.createElement('p')
+    roleEl.append(member.role)
 
-        const peopleIn = document.createElement('div');
-        
-        peopleIn.textContent = `Name: ${workers.name}, Job-title: ${workers.job-title}, Img: ${workers.img}`;
-        
-        container.appendChild(peopleIn);
-    };
-}
+    const imageEl = document.createElement('img')
+    imageEl.src= `./img${member.image}`
 
-workers(persone);
-
-for (let index = 0; index < 6; index++) {
-    const AddImage = document.getElementById("photos");
-    const img = document.createElement("img");
-    img.src = "";
-    photos.appendChild(img);
-    }
+    cardEl.appendChild(imageEl)
+    cardEl.appendChild(titleEl)
+    cardEl.appendChild(roleEl)
+    
+    containerEl.appendChild(cardEl)
+};
